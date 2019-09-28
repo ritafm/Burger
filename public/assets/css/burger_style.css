@@ -1,0 +1,33 @@
+
+* {
+    font-family: 'Vollkorn SC', serif;
+}
+body {
+    background: url("../img/burger.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+h2 {
+    text-shadow: 3px 2px 5px gray;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    background-color: rgba(500, 245, 245, .1);
+    padding: 5px;
+    margin: 4px;
+    box-shadow: 12px 8px 20px 4px saddlebrown;
+    text-shadow: 4px 4px 8px saddlebrown;
+}
+#add-title {
+    text-align: center;
+    color:white;
+}
+.form-group {
+    text-align: center;
+}
+button {
+    background-color: goldenrod;
+    border: outset;
+    border-radius: 5px;
+}

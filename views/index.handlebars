@@ -1,0 +1,52 @@
+<!-- Main Container -->
+<div class="container">
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="jumbotron">
+        <h1 class="text-center" id="title">Eat-da-Burger</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12" id="add-burger-box">
+      <h2 id="add-title">Order a Burger</h2>
+      <form class = "create-form">
+        <div class = "form-group">
+          <label for = "ca">Burger Name:</label>
+          <input type = "text" id = "burgerName" name =" name">
+          <button type="submit">Add Burger</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    
+  <!-- Row 3 -->
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <h2>Burgers Ordered:</h2>
+      <ul>
+        {{#each burgers}}
+          {{#unless devoured}}
+            {{ burgers/burger-block devour = true}}
+          {{/unless}}
+        {{/each}}
+      </ul>
+    </div>
+
+    <div class="col-lg-5 col-md-5"></div>
+
+    <div class="col-lg-3 col-md-3">
+      <h2>Burgers Eaten:</h2>
+      <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{ burgers/burger-block devour = false}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

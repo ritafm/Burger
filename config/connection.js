@@ -9,6 +9,7 @@ var connection = mysql.createConnection({
 });
 
 if(process.env.NODE_ENV === "production"){
+    console.log("production")
     connection = mysql.createConnection({
         use_env_variable: process.env.JAWSDB_URL
     });

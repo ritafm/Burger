@@ -8,12 +8,16 @@ var connection = mysql.createConnection({
     database: "burgers_db"
 });
 
-if(process.env.NODE_ENV === "production"){
-    console.log("production")
+if(process.env.JAWSDB_URL){
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+}else {
     connection = mysql.createConnection({
-        use_env_variable: process.env.JAWSDB_URL
+        host: 'localhost',
+        user: 'root',
+        password: "password",
+        database: "burgers_db"
     });
-}
+};
 
 
 connection.connect(function(err)  {

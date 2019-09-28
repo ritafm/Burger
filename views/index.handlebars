@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
       <div class="jumbotron">
-        <h1 class="text-center" id="title">Eat-da-Burger</h1>
+        <h1 class="text-center" id="title">Eat-da-Burger!</h1>
       </div>
     </div>
   </div>
@@ -17,7 +17,7 @@
         <div class = "form-group">
           <label for = "ca">Burger Name:</label>
           <input type = "text" id = "burger_name" name ="name">
-          <button class = "submit" type="submit" >Add Burger</button>
+          <button type="submit">Add Burger</button>
         </div>
       </form>
     </div>
@@ -30,7 +30,7 @@
       <ul>
         {{#each burgers}}
           {{#unless devoured}}
-            {{ burgers/burger-block }}
+            {{> burgers/burger-block }}
           {{/unless}}
         {{/each}}
       </ul>
@@ -43,7 +43,7 @@
       <ul>
         {{#each burgers}}
           {{#if devoured}}
-            {{ burgers/burger-block }}
+            {{> burgers/burger-block }}
           {{/if}}
         {{/each}}
       </ul>

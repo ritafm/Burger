@@ -8,6 +8,13 @@ var connection = mysql.createConnection({
     database: "burgers_db"
 });
 
+if(process.env.NODE_ENV === "production"){
+    connection = mysql.createConnection({
+        use_env_variable: process.env.JAWSDB_URL
+    });
+}
+
+
 connection.connect(function(err)  {
     if(err) {
         console.error("error connecting: " + err.stack);

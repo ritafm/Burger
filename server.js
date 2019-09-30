@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 require("dotenv").config();
 
-var PORT = process.env.PORT || 3306;
+var PORT = process.env.PORT || 8080;
 
 var app = express();
 var timeout = require("connect-timeout")

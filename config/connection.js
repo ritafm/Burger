@@ -6,6 +6,7 @@ if (process.env.NODE_ENV === "production") {
 }else {
     connection = mysql.createConnection({
         host: 'localhost',
+        PORT: 8080,
         user: 'root',
         password: "password",
         database: "burgers_db"

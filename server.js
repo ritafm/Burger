@@ -5,7 +5,7 @@ require("dotenv").config();
 var PORT = process.env.PORT || 8080;
 
 var app = express();
-var timeout = require("connect-timeout")
+// var timeout = require("connect-timeout")
 
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -35,10 +35,12 @@ app.use(routes);
 // });
 
 // Timeout
-app.use(timeout(15000));
-app.use(haltOnTimedout);
+// app.use(timeout(15000));
+// app.use(haltOnTimedout);
 
-function haltOnTimedout(req, res, next) {
-    if (!req.timedout) next();
-}
+// function haltOnTimedout(req, res, next) {
+//     if (!req.timedout) next();
+// }
+
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

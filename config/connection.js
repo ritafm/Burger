@@ -1,6 +1,13 @@
 var mysql = require('mysql');
 var connection = require('dotenv').config();
 
+//added from devcenter.heroku.com troubleshooting article
+var connection = mysql.createConnection(process.env.JAWSDB_URL);
+
+connection.connect();
+
+
+
 if (process.env.NODE_ENV === 'production') {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 }else {

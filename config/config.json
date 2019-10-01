@@ -21,5 +21,3 @@
     "use_env_variable": "process.ENV.JAWSDB_URL"
   }
 }
-
-

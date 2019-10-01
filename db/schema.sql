@@ -1,4 +1,5 @@
-USE soyl4k0v3vq7c4ci;
+
+USE skimqhpshyalrotz;
 
 CREATE TABLE burgers 
 (

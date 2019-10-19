@@ -12,10 +12,10 @@ if (process.env.NODE_ENV === 'production') {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 }else {
     connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'password',
-        database: 'burgers_db'
+        host: 'edo4plet5mhv93s3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'wb7c3ozrtqmxhb7v',
+        password: 'acavrxupfvgnf7kd',
+        database: 'skimqhpshyalrotz'
     });
 };
 

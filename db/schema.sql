@@ -1,4 +1,5 @@
 
+CREATE DATABASE skimqhpshyalrotz;
 USE skimqhpshyalrotz;
 
 CREATE TABLE burgers 
